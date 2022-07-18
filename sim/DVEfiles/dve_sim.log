@@ -1,0 +1,46 @@
+23:43:04    16 -->                                                             [tcl] ucliGUI::connect -toolargs -ucligui -toolexe ./simv -pid 86475 -toolin /tmp/vcs_20220718064250_86474_crazy..stdin -toolout /tmp/vcs_20220718064250_86474_crazy..stdout  
+23:43:04    17 -->                                                                 [tcl] set ucliGUI::state
+23:43:04    18 -->                                                                     [tcl] gui_update_simulator_buttons
+23:43:13    19 -->                                                                         [tcl] set ucliGUI::state
+23:43:13    20 -->                                                                             [tcl] ucliCore::getToolPID
+23:43:13    21 -->                                                                                 [tcl] synopsys::env hasTB
+23:43:14    22 -->                                                                                     [tcl] trigger_hier_stack_context_switch 0
+23:43:14    23 -->                                                                                         [tcl] synopsys::xml set_array_limit <data limit="50" />
+23:43:14    24 -->                                                                                             [tcl] synopsys::xml set_depth_limit <data limit="100" />
+23:43:14    25 --> ...  [tcl] synopsys::xml set_string_limit <data limit="1000" />
+23:43:14    26 --> ...      [tcl] synopsys::xml set_only_active_frame <data value="1" />
+23:43:14    27 --> ...          [tcl] synopsys::xml set_variable_frame_id <data value="1" />
+23:43:14    28 --> ...              [tcl] synUtils::setDVEInitPhase 1
+23:43:14    29 --> ...                  [tcl] gui_get_env SIMSETUP::SIMVPD
+23:43:14    30 --> ...                      [tcl] synopsys::dump -type VPD -file /home/crazy/projects/async_fifo/sim/inter.vpd -locking
+23:43:14    31 --> ...                          [tcl] synopsys::dump -autoflush on -fid VPD0
+23:43:14    32 --> ...                              [tcl] set ::dve_fid VPD0
+23:43:14    33 --> ...                                  [tcl] synUtils::setDVEInitPhase 0
+23:43:14    34 --> ...                                      [tcl] ucliCore::getToolPID
+23:43:14    35 --> ...                                          [tcl] synUtils::sendTool -active _icl_setToolSocket /tmp/smlnpoOBECr
+23:43:14    36 --> ...                                              [tcl] synUtils::sendTool -active {_icl_start_rpc -version "I-2014.03_Full64" -sync_file /tmp/vcs_dve_rpc.crazy.86475}
+23:43:15    37 --> ...                                                  [tcl] synUtils::sendTool -active {_icl_createSharedMemory /tmp/vcs_dve_general.crazy.86475}
+23:43:15    38 --> ...                                                      [tcl] dveMisc::vbusExpand uvm_pkg
+23:43:15    39 --> ...                                                          [tcl] ucliGUI::vpdAddHierarchy -scope uvm_pkg -depth 1 -file /home/crazy/projects/async_fifo/sim/inter.vpd; synopsys::dump -flush VPD0
+23:43:15    40 --> ...                                                              [tcl] config endofsim noexit
+23:43:15    41 --> ...                                                                  [tcl] config onfail enable all
+23:43:15    42 --> ...                                                                      [tcl] config syscaddplainmembers
+23:43:15    43 --> ...                                                                          [tcl] config syscaddsourcenames
+23:43:15    44 --> ...                                                                              [tcl] config syscaddstructtypes
+23:43:15    45 --> ...                                                                                  [tcl] synopsys::listing -disable
+23:43:18    46 --> ...                                                                                      [tcl] dveMisc::vbusExpand tb_top
+23:43:22    47 --> ...                                                                                          [tcl] synopsys::dump -add {tb_top.r_if} -aggregates  -fid VPD0
+23:43:23    48 --> ...                                                                                              [tcl] dveMisc::vbusExpand tb_top.r_if
+23:43:26    49 --> ...                                                                                                  [tcl] dveMisc::vbusExpand _vcs_unit__2543541370
+23:43:42    50 --> ...  [tcl] ucliGUI::getSignalValues -scope tb_top.r_if -radix {binary } -list {tb_top.r_if.rclk }
+23:43:42    51 --> ...      [tcl] ucliGUI::vpdAddHierarchy -scope {tb_top.unnamed$$_4} -depth 1 -file /home/crazy/projects/async_fifo/sim/inter.vpd; synopsys::dump -flush VPD0
+23:43:49    52 --> ...          [tcl] if [catch {gui_sim_terminate}] {gui_sim_terminate -kill}
+23:43:49    53 --> ...              [tcl] synopsys::finish
+23:43:49    54 --> ...                  [tcl] set ucliGUI::state
+23:43:50    55 --> ...                      [tcl] set ucliGUI::state
+23:43:50    56 --> ...                          [tcl] catch {senv activeDomain} dveMisc::result 
+23:43:50    57 --> ...                              [tcl] set dveMisc::result
+23:43:50    58 --> ...                                  [tcl] gui_update_simulator_buttons
+23:43:50    59 --> ...                                      [tcl] catch {senv activeDomain} dveMisc::result 
+23:43:50    60 --> ...                                          [tcl] set dveMisc::result
+23:43:50    61 --> ...                                              [tcl] ucli_exit

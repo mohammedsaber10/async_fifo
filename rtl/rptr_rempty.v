@@ -1,0 +1,60 @@
+module rptr_rempty
+#(
+parameter AWIDTH = 3
+)
+(
+input rclk, rrst_n, rinc,
+input [AWIDTH:0] wptr,
+output [AWIDTH-1:0] raddr,
+output reg [AWIDTH:0] rptr, //address width + 1
+output reg rempty
+);
+// all signals that have a width of (address + 1) are used in comparison
+wire [AWIDTH:0] bnext; //address width + 1
+wire renable;
+reg [AWIDTH:0] bin;    //address width + 1
+reg [AWIDTH:0] gnext;  //address width + 1
+reg empty_val;
+
+assign bnext = bin + (rinc & ~rempty);
+always@(posedge rclk, negedge rrst_n)
+if(!rrst_n) bin <= 0;
+else bin <= bnext;
+
+assign raddr = bin[AWIDTH-1:0];
+
+//////////Handling empty condition/////////////////
+//1. binary to gray logic
+always @* 
+begin : gray2bin
+integer i;
+for (i = 0; i < AWIDTH; i =  i + 1) //loop from i=0 to 2 in our case 
+    gnext[i] = bnext[i] ^ bnext[i+1]; 
+
+gnext[AWIDTH-1] = bnext[AWIDTH-1];
+end
+
+///////////////////////////////////////////////
+//2. Synchronizing the gray code pointer to be transferred in the other domain
+always @(posedge rclk, negedge rrst_n) begin
+if(!rrst_n) rptr <= 0;
+else rptr <= gnext;
+end
+
+///////////////////////////////////////////////////
+//3. Generation of empty condition
+always@* begin
+
+if (gnext == wptr)
+     empty_val = 1;
+
+else empty_val = 0;
+end
+
+//4. Registering empty value to be synchronized with the clock
+always @(posedge rclk, negedge rrst_n) begin
+if(!rrst_n) rempty <= 1;
+else rempty <= empty_val;
+end
+
+endmodule
