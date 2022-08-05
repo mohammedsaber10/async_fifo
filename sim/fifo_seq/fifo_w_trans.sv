@@ -11,4 +11,8 @@ function new(string name = "");
 super.new(name);
 endfunction
 
+function string convert2string();
+return $sformatf("wdata = 0x%0h, and write enable = %0b", wdata, wen);
+endfunction
+
 endclass

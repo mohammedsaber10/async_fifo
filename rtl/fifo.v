@@ -18,7 +18,6 @@ input renable,
 output [DATAWIDTH-1:0] DataOut,
 output empty
 );
-
 ///////SYNCING RAED AND WRITE DOMAINS///////////
 wire [ADDRWIDTH-1:0] waddr, raddr;
 wire [ADDRWIDTH:0] r2wptr_sync, w2rptr_sync, wptr, rptr;

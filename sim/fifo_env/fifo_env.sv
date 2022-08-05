@@ -19,6 +19,5 @@ virtual function void connect_phase(uvm_phase phase);
 super.connect_phase(phase);
 w_agt.agt_w_ap.connect(m_sb.wr_export);
 r_agt.agt_r_ap.connect(m_sb.rd_export);
-
 endfunction
 endclass

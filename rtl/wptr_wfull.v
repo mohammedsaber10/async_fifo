@@ -12,10 +12,10 @@ output wen
 );
 // all signals that have a width of (address + 1) are used in comparison
 wire [AWIDTH:0] bnext; //address width + 1
-wire wenable;
 reg [AWIDTH:0] bin;    //address width + 1
-reg [AWIDTH:0] gnext;  //address width + 1
+wire [AWIDTH:0] gnext;  //address width + 1
 reg full_val;
+wire wenable;
 
 assign wenable = winc & ~wfull;
 assign bnext = bin + wenable;
@@ -27,6 +27,7 @@ assign waddr = bin[AWIDTH-1:0];
 
 //////////Handling full condition/////////////////
 //1. binary to gray logic
+/*
 always @* 
 begin : gray2bin
 integer i;
@@ -35,7 +36,8 @@ for (i = 0; i < AWIDTH; i =  i + 1) //loop from i=0 to 2 in our case
 
 gnext[AWIDTH-1] = bnext[AWIDTH-1];
 end
-
+*/
+assign gnext = (bnext>>1) ^ bnext;
 ///////////////////////////////////////////////
 //2. Synchronizing the gray code pointer to be transferred in the other domain
 always @(posedge wclk, negedge wrst_n) begin
@@ -47,9 +49,9 @@ end
 //3. Generation of full condition
 always@* begin
 
-if((gnext[AWIDTH-1] != rptr[AWIDTH-1]) &&
-   (gnext[AWIDTH-2] != rptr[AWIDTH-2]) &&
-   (gnext[AWIDTH-3:0] == rptr[AWIDTH-3:0]))
+if((gnext[AWIDTH] != rptr[AWIDTH]) &&
+   (gnext[AWIDTH-1] != rptr[AWIDTH-1]) &&
+   (gnext[AWIDTH-2:0] == rptr[AWIDTH-2:0]))
 full_val = 1;
 
 else full_val = 0;
@@ -60,6 +62,6 @@ always @(posedge wclk, negedge wrst_n) begin
 if(!wrst_n) wfull <= 0;
 else wfull <= full_val;
 end
-
 assign wen = wenable;
+
 endmodule

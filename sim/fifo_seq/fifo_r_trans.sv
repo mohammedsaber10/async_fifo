@@ -12,4 +12,7 @@ function new(string name = "");
 super.new(name);
 endfunction
 
+function string convert2string();
+return $sformatf("rdata = 0x%h, and read enable = %0b", rdata, ren);
+endfunction
 endclass

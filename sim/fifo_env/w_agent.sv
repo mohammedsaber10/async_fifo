@@ -13,9 +13,10 @@ endfunction
 
 virtual function void build_phase(uvm_phase phase);
 super.build_phase(phase);
-w_drv  = w_driver::type_id::create("w_drv", this);
-w_mon  = w_monitor::type_id::create("w_mon", this);
-w_seqr = w_sequencer::type_id::create("w_seqr", this);
+//agt_w_ap = new("agt_w_ap", this);
+w_drv  =   w_driver::type_id::create("w_drv", this);
+w_mon  =   w_monitor::type_id::create("w_mon", this);
+w_seqr =   w_sequencer::type_id::create("w_seqr", this);
 endfunction
 
 virtual function void connect_phase(uvm_phase phase);

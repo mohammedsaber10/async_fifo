@@ -1,0 +1,383 @@
+
+Warning-[UNKWN_OPTVSIM] Unknown option passed
+  Ignoring unknown option '-kdb' passed to 'vcs' and continuing compilation.
+
+Command: vcs ../rtl/dual_port_ram.v ../rtl/fifo.v ../rtl/rptr_rempty.v ../rtl/sync.v \
+../rtl/wptr_wfull.v tb_top.sv -sverilog -ntb_opts uvm-1.1 -lca -debug_access+all \
+-timescale=1ns/1ns -kdb +vcs+vcdpluson -l comp.log
+                         Chronologic VCS (TM)
+         Version I-2014.03_Full64 -- Thu Aug  4 11:39:17 2022
+               Copyright (c) 1991-2014 by Synopsys Inc.
+                         ALL RIGHTS RESERVED
+
+This program is proprietary and confidential information of Synopsys Inc.
+and may be used and disclosed only as authorized in a license agreement
+controlling such use and disclosure.
+
+
+Warning-[LCA_FEATURES_ENABLED] Usage warning
+  LCA features enabled by '-lca' argument on the command line.  For more 
+  information regarding list of LCA features please refer to Chapter "LCA 
+  features" in the VCS/VCS-MX Release Notes
+
+
+Warning-[ACC_CLI_ON] ACC/CLI capabilities enabled
+  ACC/CLI capabilities have been enabled for the entire design. For faster 
+  performance enable module specific capability in pli.tab file
+
+Parsing design file '/opt/synopsys/vcs_2014/etc/uvm-1.1/uvm_pkg.sv'
+Parsing included file '/opt/synopsys/vcs_2014/etc/uvm-1.1/uvm_macros.svh'.
+Parsing included file '/opt/synopsys/vcs_2014/etc/uvm-1.1/macros/uvm_version_defines.svh'.
+Back to file '/opt/synopsys/vcs_2014/etc/uvm-1.1/uvm_macros.svh'.
+Parsing included file '/opt/synopsys/vcs_2014/etc/uvm-1.1/macros/uvm_message_defines.svh'.
+Back to file '/opt/synopsys/vcs_2014/etc/uvm-1.1/uvm_macros.svh'.
+Parsing included file '/opt/synopsys/vcs_2014/etc/uvm-1.1/macros/uvm_phase_defines.svh'.
+Back to file '/opt/synopsys/vcs_2014/etc/uvm-1.1/uvm_macros.svh'.
+Parsing included file '/opt/synopsys/vcs_2014/etc/uvm-1.1/macros/uvm_object_defines.svh'.
+Back to file '/opt/synopsys/vcs_2014/etc/uvm-1.1/uvm_macros.svh'.
+Parsing included file '/opt/synopsys/vcs_2014/etc/uvm-1.1/macros/uvm_printer_defines.svh'.
+Back to file '/opt/synopsys/vcs_2014/etc/uvm-1.1/uvm_macros.svh'.
+Parsing included file '/opt/synopsys/vcs_2014/etc/uvm-1.1/macros/uvm_tlm_defines.svh'.
+Parsing included file '/opt/synopsys/vcs_2014/etc/uvm-1.1/tlm1/uvm_tlm_imps.svh'.
+Back to file '/opt/synopsys/vcs_2014/etc/uvm-1.1/macros/uvm_tlm_defines.svh'.
+Back to file '/opt/synopsys/vcs_2014/etc/uvm-1.1/uvm_macros.svh'.
+Parsing included file '/opt/synopsys/vcs_2014/etc/uvm-1.1/macros/uvm_sequence_defines.svh'.
+Back to file '/opt/synopsys/vcs_2014/etc/uvm-1.1/uvm_macros.svh'.
+Parsing included file '/opt/synopsys/vcs_2014/etc/uvm-1.1/macros/uvm_callback_defines.svh'.
+Back to file '/opt/synopsys/vcs_2014/etc/uvm-1.1/uvm_macros.svh'.
+Parsing included file '/opt/synopsys/vcs_2014/etc/uvm-1.1/macros/uvm_reg_defines.svh'.
+Back to file '/opt/synopsys/vcs_2014/etc/uvm-1.1/uvm_macros.svh'.
+Parsing included file '/opt/synopsys/vcs_2014/etc/uvm-1.1/macros/uvm_deprecated_defines.svh'.
+Back to file '/opt/synopsys/vcs_2014/etc/uvm-1.1/uvm_macros.svh'.
+Back to file '/opt/synopsys/vcs_2014/etc/uvm-1.1/uvm_pkg.sv'.
+Parsing included file '/opt/synopsys/vcs_2014/etc/uvm-1.1/dpi/uvm_dpi.svh'.
+Parsing included file '/opt/synopsys/vcs_2014/etc/uvm-1.1/dpi/uvm_hdl.svh'.
+Back to file '/opt/synopsys/vcs_2014/etc/uvm-1.1/dpi/uvm_dpi.svh'.
+Parsing included file '/opt/synopsys/vcs_2014/etc/uvm-1.1/dpi/uvm_svcmd_dpi.svh'.
+Back to file '/opt/synopsys/vcs_2014/etc/uvm-1.1/dpi/uvm_dpi.svh'.
+Parsing included file '/opt/synopsys/vcs_2014/etc/uvm-1.1/dpi/uvm_regex.svh'.
+Back to file '/opt/synopsys/vcs_2014/etc/uvm-1.1/dpi/uvm_dpi.svh'.
+Back to file '/opt/synopsys/vcs_2014/etc/uvm-1.1/uvm_pkg.sv'.
+Parsing included file '/opt/synopsys/vcs_2014/etc/uvm-1.1/base/uvm_base.svh'.
+Parsing included file '/opt/synopsys/vcs_2014/etc/uvm-1.1/base/uvm_version.svh'.
+Back to file '/opt/synopsys/vcs_2014/etc/uvm-1.1/base/uvm_base.svh'.
+Parsing included file '/opt/synopsys/vcs_2014/etc/uvm-1.1/base/uvm_object_globals.svh'.
+Back to file '/opt/synopsys/vcs_2014/etc/uvm-1.1/base/uvm_base.svh'.
+Parsing included file '/opt/synopsys/vcs_2014/etc/uvm-1.1/base/uvm_misc.svh'.
+Back to file '/opt/synopsys/vcs_2014/etc/uvm-1.1/base/uvm_base.svh'.
+Parsing included file '/opt/synopsys/vcs_2014/etc/uvm-1.1/base/uvm_object.svh'.
+Back to file '/opt/synopsys/vcs_2014/etc/uvm-1.1/base/uvm_base.svh'.
+Parsing included file '/opt/synopsys/vcs_2014/etc/uvm-1.1/base/uvm_pool.svh'.
+Back to file '/opt/synopsys/vcs_2014/etc/uvm-1.1/base/uvm_base.svh'.
+Parsing included file '/opt/synopsys/vcs_2014/etc/uvm-1.1/base/uvm_queue.svh'.
+Back to file '/opt/synopsys/vcs_2014/etc/uvm-1.1/base/uvm_base.svh'.
+Parsing included file '/opt/synopsys/vcs_2014/etc/uvm-1.1/base/uvm_factory.svh'.
+Back to file '/opt/synopsys/vcs_2014/etc/uvm-1.1/base/uvm_base.svh'.
+Parsing included file '/opt/synopsys/vcs_2014/etc/uvm-1.1/base/uvm_registry.svh'.
+Back to file '/opt/synopsys/vcs_2014/etc/uvm-1.1/base/uvm_base.svh'.
+Parsing included file '/opt/synopsys/vcs_2014/etc/uvm-1.1/base/uvm_spell_chkr.svh'.
+Back to file '/opt/synopsys/vcs_2014/etc/uvm-1.1/base/uvm_base.svh'.
+Parsing included file '/opt/synopsys/vcs_2014/etc/uvm-1.1/base/uvm_resource.svh'.
+Back to file '/opt/synopsys/vcs_2014/etc/uvm-1.1/base/uvm_base.svh'.
+Parsing included file '/opt/synopsys/vcs_2014/etc/uvm-1.1/deprecated/uvm_resource_converter.svh'.
+Back to file '/opt/synopsys/vcs_2014/etc/uvm-1.1/base/uvm_base.svh'.
+Parsing included file '/opt/synopsys/vcs_2014/etc/uvm-1.1/base/uvm_resource_specializations.svh'.
+Back to file '/opt/synopsys/vcs_2014/etc/uvm-1.1/base/uvm_base.svh'.
+Parsing included file '/opt/synopsys/vcs_2014/etc/uvm-1.1/base/uvm_resource_db.svh'.
+Back to file '/opt/synopsys/vcs_2014/etc/uvm-1.1/base/uvm_base.svh'.
+Parsing included file '/opt/synopsys/vcs_2014/etc/uvm-1.1/base/uvm_config_db.svh'.
+Back to file '/opt/synopsys/vcs_2014/etc/uvm-1.1/base/uvm_base.svh'.
+Parsing included file '/opt/synopsys/vcs_2014/etc/uvm-1.1/base/uvm_printer.svh'.
+Back to file '/opt/synopsys/vcs_2014/etc/uvm-1.1/base/uvm_base.svh'.
+Parsing included file '/opt/synopsys/vcs_2014/etc/uvm-1.1/base/uvm_comparer.svh'.
+Back to file '/opt/synopsys/vcs_2014/etc/uvm-1.1/base/uvm_base.svh'.
+Parsing included file '/opt/synopsys/vcs_2014/etc/uvm-1.1/base/uvm_packer.svh'.
+Back to file '/opt/synopsys/vcs_2014/etc/uvm-1.1/base/uvm_base.svh'.
+Parsing included file '/opt/synopsys/vcs_2014/etc/uvm-1.1/base/uvm_recorder.svh'.
+Back to file '/opt/synopsys/vcs_2014/etc/uvm-1.1/base/uvm_base.svh'.
+Parsing included file '/opt/synopsys/vcs_2014/etc/uvm-1.1/base/uvm_event_callback.svh'.
+Back to file '/opt/synopsys/vcs_2014/etc/uvm-1.1/base/uvm_base.svh'.
+Parsing included file '/opt/synopsys/vcs_2014/etc/uvm-1.1/base/uvm_event.svh'.
+Back to file '/opt/synopsys/vcs_2014/etc/uvm-1.1/base/uvm_base.svh'.
+Parsing included file '/opt/synopsys/vcs_2014/etc/uvm-1.1/base/uvm_barrier.svh'.
+Back to file '/opt/synopsys/vcs_2014/etc/uvm-1.1/base/uvm_base.svh'.
+Parsing included file '/opt/synopsys/vcs_2014/etc/uvm-1.1/base/uvm_callback.svh'.
+Parsing included file '/opt/synopsys/vcs_2014/etc/uvm-1.1/uvm_macros.svh'.
+Back to file '/opt/synopsys/vcs_2014/etc/uvm-1.1/base/uvm_callback.svh'.
+Back to file '/opt/synopsys/vcs_2014/etc/uvm-1.1/base/uvm_base.svh'.
+Parsing included file '/opt/synopsys/vcs_2014/etc/uvm-1.1/base/uvm_report_catcher.svh'.
+Back to file '/opt/synopsys/vcs_2014/etc/uvm-1.1/base/uvm_base.svh'.
+Parsing included file '/opt/synopsys/vcs_2014/etc/uvm-1.1/base/uvm_report_server.svh'.
+Back to file '/opt/synopsys/vcs_2014/etc/uvm-1.1/base/uvm_base.svh'.
+Parsing included file '/opt/synopsys/vcs_2014/etc/uvm-1.1/base/uvm_report_handler.svh'.
+Back to file '/opt/synopsys/vcs_2014/etc/uvm-1.1/base/uvm_base.svh'.
+Parsing included file '/opt/synopsys/vcs_2014/etc/uvm-1.1/base/uvm_report_object.svh'.
+Back to file '/opt/synopsys/vcs_2014/etc/uvm-1.1/base/uvm_base.svh'.
+Parsing included file '/opt/synopsys/vcs_2014/etc/uvm-1.1/base/uvm_transaction.svh'.
+Back to file '/opt/synopsys/vcs_2014/etc/uvm-1.1/base/uvm_base.svh'.
+Parsing included file '/opt/synopsys/vcs_2014/etc/uvm-1.1/base/uvm_phase.svh'.
+Back to file '/opt/synopsys/vcs_2014/etc/uvm-1.1/base/uvm_base.svh'.
+Parsing included file '/opt/synopsys/vcs_2014/etc/uvm-1.1/base/uvm_domain.svh'.
+Back to file '/opt/synopsys/vcs_2014/etc/uvm-1.1/base/uvm_base.svh'.
+Parsing included file '/opt/synopsys/vcs_2014/etc/uvm-1.1/base/uvm_bottomup_phase.svh'.
+Back to file '/opt/synopsys/vcs_2014/etc/uvm-1.1/base/uvm_base.svh'.
+Parsing included file '/opt/synopsys/vcs_2014/etc/uvm-1.1/base/uvm_topdown_phase.svh'.
+Back to file '/opt/synopsys/vcs_2014/etc/uvm-1.1/base/uvm_base.svh'.
+Parsing included file '/opt/synopsys/vcs_2014/etc/uvm-1.1/base/uvm_task_phase.svh'.
+Back to file '/opt/synopsys/vcs_2014/etc/uvm-1.1/base/uvm_base.svh'.
+Parsing included file '/opt/synopsys/vcs_2014/etc/uvm-1.1/base/uvm_common_phases.svh'.
+Back to file '/opt/synopsys/vcs_2014/etc/uvm-1.1/base/uvm_base.svh'.
+Parsing included file '/opt/synopsys/vcs_2014/etc/uvm-1.1/base/uvm_runtime_phases.svh'.
+Back to file '/opt/synopsys/vcs_2014/etc/uvm-1.1/base/uvm_base.svh'.
+Parsing included file '/opt/synopsys/vcs_2014/etc/uvm-1.1/base/uvm_component.svh'.
+Parsing included file '/opt/synopsys/vcs_2014/etc/uvm-1.1/base/uvm_root.svh'.
+Back to file '/opt/synopsys/vcs_2014/etc/uvm-1.1/base/uvm_component.svh'.
+Back to file '/opt/synopsys/vcs_2014/etc/uvm-1.1/base/uvm_base.svh'.
+Parsing included file '/opt/synopsys/vcs_2014/etc/uvm-1.1/base/uvm_objection.svh'.
+Back to file '/opt/synopsys/vcs_2014/etc/uvm-1.1/base/uvm_base.svh'.
+Parsing included file '/opt/synopsys/vcs_2014/etc/uvm-1.1/base/uvm_heartbeat.svh'.
+Back to file '/opt/synopsys/vcs_2014/etc/uvm-1.1/base/uvm_base.svh'.
+Parsing included file '/opt/synopsys/vcs_2014/etc/uvm-1.1/base/uvm_globals.svh'.
+Back to file '/opt/synopsys/vcs_2014/etc/uvm-1.1/base/uvm_base.svh'.
+Parsing included file '/opt/synopsys/vcs_2014/etc/uvm-1.1/base/uvm_cmdline_processor.svh'.
+Back to file '/opt/synopsys/vcs_2014/etc/uvm-1.1/base/uvm_base.svh'.
+Back to file '/opt/synopsys/vcs_2014/etc/uvm-1.1/uvm_pkg.sv'.
+Parsing included file '/opt/synopsys/vcs_2014/etc/uvm-1.1/tlm1/uvm_tlm.svh'.
+Parsing included file '/opt/synopsys/vcs_2014/etc/uvm-1.1/tlm1/uvm_tlm_ifs.svh'.
+Back to file '/opt/synopsys/vcs_2014/etc/uvm-1.1/tlm1/uvm_tlm.svh'.
+Parsing included file '/opt/synopsys/vcs_2014/etc/uvm-1.1/tlm1/uvm_sqr_ifs.svh'.
+Back to file '/opt/synopsys/vcs_2014/etc/uvm-1.1/tlm1/uvm_tlm.svh'.
+Parsing included file '/opt/synopsys/vcs_2014/etc/uvm-1.1/base/uvm_port_base.svh'.
+Back to file '/opt/synopsys/vcs_2014/etc/uvm-1.1/tlm1/uvm_tlm.svh'.
+Parsing included file '/opt/synopsys/vcs_2014/etc/uvm-1.1/tlm1/uvm_tlm_imps.svh'.
+Back to file '/opt/synopsys/vcs_2014/etc/uvm-1.1/tlm1/uvm_tlm.svh'.
+Parsing included file '/opt/synopsys/vcs_2014/etc/uvm-1.1/tlm1/uvm_imps.svh'.
+Back to file '/opt/synopsys/vcs_2014/etc/uvm-1.1/tlm1/uvm_tlm.svh'.
+Parsing included file '/opt/synopsys/vcs_2014/etc/uvm-1.1/tlm1/uvm_ports.svh'.
+Back to file '/opt/synopsys/vcs_2014/etc/uvm-1.1/tlm1/uvm_tlm.svh'.
+Parsing included file '/opt/synopsys/vcs_2014/etc/uvm-1.1/tlm1/uvm_exports.svh'.
+Back to file '/opt/synopsys/vcs_2014/etc/uvm-1.1/tlm1/uvm_tlm.svh'.
+Parsing included file '/opt/synopsys/vcs_2014/etc/uvm-1.1/tlm1/uvm_analysis_port.svh'.
+Back to file '/opt/synopsys/vcs_2014/etc/uvm-1.1/tlm1/uvm_tlm.svh'.
+Parsing included file '/opt/synopsys/vcs_2014/etc/uvm-1.1/tlm1/uvm_tlm_fifo_base.svh'.
+Back to file '/opt/synopsys/vcs_2014/etc/uvm-1.1/tlm1/uvm_tlm.svh'.
+Parsing included file '/opt/synopsys/vcs_2014/etc/uvm-1.1/tlm1/uvm_tlm_fifos.svh'.
+Back to file '/opt/synopsys/vcs_2014/etc/uvm-1.1/tlm1/uvm_tlm.svh'.
+Parsing included file '/opt/synopsys/vcs_2014/etc/uvm-1.1/tlm1/uvm_tlm_req_rsp.svh'.
+Back to file '/opt/synopsys/vcs_2014/etc/uvm-1.1/tlm1/uvm_tlm.svh'.
+Parsing included file '/opt/synopsys/vcs_2014/etc/uvm-1.1/tlm1/uvm_sqr_connections.svh'.
+Back to file '/opt/synopsys/vcs_2014/etc/uvm-1.1/tlm1/uvm_tlm.svh'.
+Back to file '/opt/synopsys/vcs_2014/etc/uvm-1.1/uvm_pkg.sv'.
+Parsing included file '/opt/synopsys/vcs_2014/etc/uvm-1.1/comps/uvm_comps.svh'.
+Parsing included file '/opt/synopsys/vcs_2014/etc/uvm-1.1/comps/uvm_pair.svh'.
+Back to file '/opt/synopsys/vcs_2014/etc/uvm-1.1/comps/uvm_comps.svh'.
+Parsing included file '/opt/synopsys/vcs_2014/etc/uvm-1.1/comps/uvm_policies.svh'.
+Back to file '/opt/synopsys/vcs_2014/etc/uvm-1.1/comps/uvm_comps.svh'.
+Parsing included file '/opt/synopsys/vcs_2014/etc/uvm-1.1/comps/uvm_in_order_comparator.svh'.
+Back to file '/opt/synopsys/vcs_2014/etc/uvm-1.1/comps/uvm_comps.svh'.
+Parsing included file '/opt/synopsys/vcs_2014/etc/uvm-1.1/comps/uvm_algorithmic_comparator.svh'.
+Back to file '/opt/synopsys/vcs_2014/etc/uvm-1.1/comps/uvm_comps.svh'.
+Parsing included file '/opt/synopsys/vcs_2014/etc/uvm-1.1/comps/uvm_random_stimulus.svh'.
+Back to file '/opt/synopsys/vcs_2014/etc/uvm-1.1/comps/uvm_comps.svh'.
+Parsing included file '/opt/synopsys/vcs_2014/etc/uvm-1.1/comps/uvm_subscriber.svh'.
+Back to file '/opt/synopsys/vcs_2014/etc/uvm-1.1/comps/uvm_comps.svh'.
+Parsing included file '/opt/synopsys/vcs_2014/etc/uvm-1.1/comps/uvm_monitor.svh'.
+Back to file '/opt/synopsys/vcs_2014/etc/uvm-1.1/comps/uvm_comps.svh'.
+Parsing included file '/opt/synopsys/vcs_2014/etc/uvm-1.1/comps/uvm_driver.svh'.
+Back to file '/opt/synopsys/vcs_2014/etc/uvm-1.1/comps/uvm_comps.svh'.
+Parsing included file '/opt/synopsys/vcs_2014/etc/uvm-1.1/comps/uvm_push_driver.svh'.
+Back to file '/opt/synopsys/vcs_2014/etc/uvm-1.1/comps/uvm_comps.svh'.
+Parsing included file '/opt/synopsys/vcs_2014/etc/uvm-1.1/comps/uvm_scoreboard.svh'.
+Back to file '/opt/synopsys/vcs_2014/etc/uvm-1.1/comps/uvm_comps.svh'.
+Parsing included file '/opt/synopsys/vcs_2014/etc/uvm-1.1/comps/uvm_agent.svh'.
+Back to file '/opt/synopsys/vcs_2014/etc/uvm-1.1/comps/uvm_comps.svh'.
+Parsing included file '/opt/synopsys/vcs_2014/etc/uvm-1.1/comps/uvm_env.svh'.
+Back to file '/opt/synopsys/vcs_2014/etc/uvm-1.1/comps/uvm_comps.svh'.
+Parsing included file '/opt/synopsys/vcs_2014/etc/uvm-1.1/comps/uvm_test.svh'.
+Back to file '/opt/synopsys/vcs_2014/etc/uvm-1.1/comps/uvm_comps.svh'.
+Back to file '/opt/synopsys/vcs_2014/etc/uvm-1.1/uvm_pkg.sv'.
+Parsing included file '/opt/synopsys/vcs_2014/etc/uvm-1.1/seq/uvm_seq.svh'.
+Parsing included file '/opt/synopsys/vcs_2014/etc/uvm-1.1/seq/uvm_sequence_item.svh'.
+Back to file '/opt/synopsys/vcs_2014/etc/uvm-1.1/seq/uvm_seq.svh'.
+Parsing included file '/opt/synopsys/vcs_2014/etc/uvm-1.1/seq/uvm_sequencer_base.svh'.
+Back to file '/opt/synopsys/vcs_2014/etc/uvm-1.1/seq/uvm_seq.svh'.
+Parsing included file '/opt/synopsys/vcs_2014/etc/uvm-1.1/seq/uvm_sequencer_analysis_fifo.svh'.
+Back to file '/opt/synopsys/vcs_2014/etc/uvm-1.1/seq/uvm_seq.svh'.
+Parsing included file '/opt/synopsys/vcs_2014/etc/uvm-1.1/seq/uvm_sequencer_param_base.svh'.
+Back to file '/opt/synopsys/vcs_2014/etc/uvm-1.1/seq/uvm_seq.svh'.
+Parsing included file '/opt/synopsys/vcs_2014/etc/uvm-1.1/seq/uvm_sequencer.svh'.
+Back to file '/opt/synopsys/vcs_2014/etc/uvm-1.1/seq/uvm_seq.svh'.
+Parsing included file '/opt/synopsys/vcs_2014/etc/uvm-1.1/seq/uvm_push_sequencer.svh'.
+Back to file '/opt/synopsys/vcs_2014/etc/uvm-1.1/seq/uvm_seq.svh'.
+Parsing included file '/opt/synopsys/vcs_2014/etc/uvm-1.1/seq/uvm_sequence_base.svh'.
+Back to file '/opt/synopsys/vcs_2014/etc/uvm-1.1/seq/uvm_seq.svh'.
+Parsing included file '/opt/synopsys/vcs_2014/etc/uvm-1.1/seq/uvm_sequence.svh'.
+Back to file '/opt/synopsys/vcs_2014/etc/uvm-1.1/seq/uvm_seq.svh'.
+Parsing included file '/opt/synopsys/vcs_2014/etc/uvm-1.1/seq/uvm_sequence_library.svh'.
+Back to file '/opt/synopsys/vcs_2014/etc/uvm-1.1/seq/uvm_seq.svh'.
+Parsing included file '/opt/synopsys/vcs_2014/etc/uvm-1.1/seq/uvm_sequence_builtin.svh'.
+Back to file '/opt/synopsys/vcs_2014/etc/uvm-1.1/seq/uvm_seq.svh'.
+Back to file '/opt/synopsys/vcs_2014/etc/uvm-1.1/uvm_pkg.sv'.
+Parsing included file '/opt/synopsys/vcs_2014/etc/uvm-1.1/tlm2/uvm_tlm2.svh'.
+Parsing included file '/opt/synopsys/vcs_2014/etc/uvm-1.1/tlm2/uvm_tlm2_defines.svh'.
+Back to file '/opt/synopsys/vcs_2014/etc/uvm-1.1/tlm2/uvm_tlm2.svh'.
+Parsing included file '/opt/synopsys/vcs_2014/etc/uvm-1.1/tlm2/uvm_tlm2_time.svh'.
+Back to file '/opt/synopsys/vcs_2014/etc/uvm-1.1/tlm2/uvm_tlm2.svh'.
+Parsing included file '/opt/synopsys/vcs_2014/etc/uvm-1.1/tlm2/uvm_tlm2_generic_payload.svh'.
+Back to file '/opt/synopsys/vcs_2014/etc/uvm-1.1/tlm2/uvm_tlm2.svh'.
+Parsing included file '/opt/synopsys/vcs_2014/etc/uvm-1.1/tlm2/uvm_tlm2_ifs.svh'.
+Back to file '/opt/synopsys/vcs_2014/etc/uvm-1.1/tlm2/uvm_tlm2.svh'.
+Parsing included file '/opt/synopsys/vcs_2014/etc/uvm-1.1/tlm2/uvm_tlm2_imps.svh'.
+Back to file '/opt/synopsys/vcs_2014/etc/uvm-1.1/tlm2/uvm_tlm2.svh'.
+Parsing included file '/opt/synopsys/vcs_2014/etc/uvm-1.1/tlm2/uvm_tlm2_ports.svh'.
+Back to file '/opt/synopsys/vcs_2014/etc/uvm-1.1/tlm2/uvm_tlm2.svh'.
+Parsing included file '/opt/synopsys/vcs_2014/etc/uvm-1.1/tlm2/uvm_tlm2_exports.svh'.
+Back to file '/opt/synopsys/vcs_2014/etc/uvm-1.1/tlm2/uvm_tlm2.svh'.
+Parsing included file '/opt/synopsys/vcs_2014/etc/uvm-1.1/tlm2/uvm_tlm2_sockets_base.svh'.
+Back to file '/opt/synopsys/vcs_2014/etc/uvm-1.1/tlm2/uvm_tlm2.svh'.
+Parsing included file '/opt/synopsys/vcs_2014/etc/uvm-1.1/tlm2/uvm_tlm2_sockets.svh'.
+Back to file '/opt/synopsys/vcs_2014/etc/uvm-1.1/tlm2/uvm_tlm2.svh'.
+Back to file '/opt/synopsys/vcs_2014/etc/uvm-1.1/uvm_pkg.sv'.
+Parsing included file '/opt/synopsys/vcs_2014/etc/uvm-1.1/reg/uvm_reg_model.svh'.
+Parsing included file '/opt/synopsys/vcs_2014/etc/uvm-1.1/reg/uvm_reg_item.svh'.
+Back to file '/opt/synopsys/vcs_2014/etc/uvm-1.1/reg/uvm_reg_model.svh'.
+Parsing included file '/opt/synopsys/vcs_2014/etc/uvm-1.1/reg/uvm_reg_adapter.svh'.
+Back to file '/opt/synopsys/vcs_2014/etc/uvm-1.1/reg/uvm_reg_model.svh'.
+Parsing included file '/opt/synopsys/vcs_2014/etc/uvm-1.1/reg/uvm_reg_predictor.svh'.
+Back to file '/opt/synopsys/vcs_2014/etc/uvm-1.1/reg/uvm_reg_model.svh'.
+Parsing included file '/opt/synopsys/vcs_2014/etc/uvm-1.1/reg/uvm_reg_sequence.svh'.
+Back to file '/opt/synopsys/vcs_2014/etc/uvm-1.1/reg/uvm_reg_model.svh'.
+Parsing included file '/opt/synopsys/vcs_2014/etc/uvm-1.1/reg/uvm_reg_cbs.svh'.
+Back to file '/opt/synopsys/vcs_2014/etc/uvm-1.1/reg/uvm_reg_model.svh'.
+Parsing included file '/opt/synopsys/vcs_2014/etc/uvm-1.1/reg/uvm_reg_backdoor.svh'.
+Back to file '/opt/synopsys/vcs_2014/etc/uvm-1.1/reg/uvm_reg_model.svh'.
+Parsing included file '/opt/synopsys/vcs_2014/etc/uvm-1.1/reg/uvm_reg_field.svh'.
+Back to file '/opt/synopsys/vcs_2014/etc/uvm-1.1/reg/uvm_reg_model.svh'.
+Parsing included file '/opt/synopsys/vcs_2014/etc/uvm-1.1/reg/uvm_vreg_field.svh'.
+Back to file '/opt/synopsys/vcs_2014/etc/uvm-1.1/reg/uvm_reg_model.svh'.
+Parsing included file '/opt/synopsys/vcs_2014/etc/uvm-1.1/reg/uvm_reg.svh'.
+Back to file '/opt/synopsys/vcs_2014/etc/uvm-1.1/reg/uvm_reg_model.svh'.
+Parsing included file '/opt/synopsys/vcs_2014/etc/uvm-1.1/reg/uvm_reg_indirect.svh'.
+Back to file '/opt/synopsys/vcs_2014/etc/uvm-1.1/reg/uvm_reg_model.svh'.
+Parsing included file '/opt/synopsys/vcs_2014/etc/uvm-1.1/reg/uvm_reg_fifo.svh'.
+Back to file '/opt/synopsys/vcs_2014/etc/uvm-1.1/reg/uvm_reg_model.svh'.
+Parsing included file '/opt/synopsys/vcs_2014/etc/uvm-1.1/reg/uvm_reg_file.svh'.
+Back to file '/opt/synopsys/vcs_2014/etc/uvm-1.1/reg/uvm_reg_model.svh'.
+Parsing included file '/opt/synopsys/vcs_2014/etc/uvm-1.1/reg/uvm_mem_mam.svh'.
+Back to file '/opt/synopsys/vcs_2014/etc/uvm-1.1/reg/uvm_reg_model.svh'.
+Parsing included file '/opt/synopsys/vcs_2014/etc/uvm-1.1/reg/uvm_vreg.svh'.
+Back to file '/opt/synopsys/vcs_2014/etc/uvm-1.1/reg/uvm_reg_model.svh'.
+Parsing included file '/opt/synopsys/vcs_2014/etc/uvm-1.1/reg/uvm_mem.svh'.
+Back to file '/opt/synopsys/vcs_2014/etc/uvm-1.1/reg/uvm_reg_model.svh'.
+Parsing included file '/opt/synopsys/vcs_2014/etc/uvm-1.1/reg/uvm_reg_map.svh'.
+Back to file '/opt/synopsys/vcs_2014/etc/uvm-1.1/reg/uvm_reg_model.svh'.
+Parsing included file '/opt/synopsys/vcs_2014/etc/uvm-1.1/reg/uvm_reg_block.svh'.
+Back to file '/opt/synopsys/vcs_2014/etc/uvm-1.1/reg/uvm_reg_model.svh'.
+Parsing included file '/opt/synopsys/vcs_2014/etc/uvm-1.1/reg/sequences/uvm_reg_hw_reset_seq.svh'.
+Back to file '/opt/synopsys/vcs_2014/etc/uvm-1.1/reg/uvm_reg_model.svh'.
+Parsing included file '/opt/synopsys/vcs_2014/etc/uvm-1.1/reg/sequences/uvm_reg_bit_bash_seq.svh'.
+Back to file '/opt/synopsys/vcs_2014/etc/uvm-1.1/reg/uvm_reg_model.svh'.
+Parsing included file '/opt/synopsys/vcs_2014/etc/uvm-1.1/reg/sequences/uvm_mem_walk_seq.svh'.
+Back to file '/opt/synopsys/vcs_2014/etc/uvm-1.1/reg/uvm_reg_model.svh'.
+Parsing included file '/opt/synopsys/vcs_2014/etc/uvm-1.1/reg/sequences/uvm_mem_access_seq.svh'.
+Back to file '/opt/synopsys/vcs_2014/etc/uvm-1.1/reg/uvm_reg_model.svh'.
+Parsing included file '/opt/synopsys/vcs_2014/etc/uvm-1.1/reg/sequences/uvm_reg_access_seq.svh'.
+Back to file '/opt/synopsys/vcs_2014/etc/uvm-1.1/reg/uvm_reg_model.svh'.
+Parsing included file '/opt/synopsys/vcs_2014/etc/uvm-1.1/reg/sequences/uvm_reg_mem_shared_access_seq.svh'.
+Back to file '/opt/synopsys/vcs_2014/etc/uvm-1.1/reg/uvm_reg_model.svh'.
+Parsing included file '/opt/synopsys/vcs_2014/etc/uvm-1.1/reg/sequences/uvm_reg_mem_built_in_seq.svh'.
+Back to file '/opt/synopsys/vcs_2014/etc/uvm-1.1/reg/uvm_reg_model.svh'.
+Parsing included file '/opt/synopsys/vcs_2014/etc/uvm-1.1/reg/sequences/uvm_reg_mem_hdl_paths_seq.svh'.
+Back to file '/opt/synopsys/vcs_2014/etc/uvm-1.1/reg/uvm_reg_model.svh'.
+Parsing included file '/opt/synopsys/vcs_2014/etc/uvm-1.1/reg/snps_uvm_reg_bank.svh'.
+Back to file '/opt/synopsys/vcs_2014/etc/uvm-1.1/reg/uvm_reg_model.svh'.
+Back to file '/opt/synopsys/vcs_2014/etc/uvm-1.1/uvm_pkg.sv'.
+Parsing design file '/opt/synopsys/vcs_2014/etc/uvm-1.1/vcs/uvm_custom_install_vcs_recorder.sv'
+Parsing included file '/opt/synopsys/vcs_2014/etc/uvm-1.1/vcs/msglog.svh'.
+Back to file '/opt/synopsys/vcs_2014/etc/uvm-1.1/vcs/uvm_custom_install_vcs_recorder.sv'.
+Parsing included file '/opt/synopsys/vcs_2014/etc/uvm-1.1/vcs/uvm_msglog_report_server.sv'.
+Back to file '/opt/synopsys/vcs_2014/etc/uvm-1.1/vcs/uvm_custom_install_vcs_recorder.sv'.
+Parsing included file '/opt/synopsys/vcs_2014/etc/uvm-1.1/vcs/uvm_vcs_recorder.svh'.
+Back to file '/opt/synopsys/vcs_2014/etc/uvm-1.1/vcs/uvm_custom_install_vcs_recorder.sv'.
+Parsing included file '/opt/synopsys/vcs_2014/etc/uvm-1.1/vcs/uvm_vcs_record_interface.sv'.
+Back to file '/opt/synopsys/vcs_2014/etc/uvm-1.1/vcs/uvm_custom_install_vcs_recorder.sv'.
+Parsing design file '../rtl/dual_port_ram.v'
+Parsing design file '../rtl/fifo.v'
+Parsing design file '../rtl/rptr_rempty.v'
+Parsing design file '../rtl/sync.v'
+Parsing design file '../rtl/wptr_wfull.v'
+Parsing design file 'tb_top.sv'
+Parsing included file './fifo_if/fifo_w_if.sv'.
+Back to file 'tb_top.sv'.
+Parsing included file './fifo_if/fifo_r_if.sv'.
+Back to file 'tb_top.sv'.
+Parsing included file 'fifo_env_pkg.sv'.
+Parsing included file './fifo_seq/fifo_w_trans.sv'.
+Back to file 'fifo_env_pkg.sv'.
+Parsing included file './fifo_seq/fifo_w_seq.sv'.
+Back to file 'fifo_env_pkg.sv'.
+Parsing included file './fifo_seq/fifo_r_trans.sv'.
+Back to file 'fifo_env_pkg.sv'.
+Parsing included file './fifo_seq/fifo_r_seq.sv'.
+Back to file 'fifo_env_pkg.sv'.
+Parsing included file './fifo_env/w_sequencer.sv'.
+Back to file 'fifo_env_pkg.sv'.
+Parsing included file './fifo_env/w_driver.sv'.
+Back to file 'fifo_env_pkg.sv'.
+Parsing included file './fifo_env/w_monitor.sv'.
+Back to file 'fifo_env_pkg.sv'.
+Parsing included file './fifo_env/w_agent.sv'.
+Back to file 'fifo_env_pkg.sv'.
+Parsing included file './fifo_env/r_sequencer.sv'.
+Back to file 'fifo_env_pkg.sv'.
+Parsing included file './fifo_env/r_driver.sv'.
+Back to file 'fifo_env_pkg.sv'.
+Parsing included file './fifo_env/r_monitor.sv'.
+Back to file 'fifo_env_pkg.sv'.
+Parsing included file './fifo_env/r_agent.sv'.
+Back to file 'fifo_env_pkg.sv'.
+Parsing included file './fifo_env/fifo_scoreboard.sv'.
+Back to file 'fifo_env_pkg.sv'.
+Parsing included file './fifo_env/fifo_env.sv'.
+Back to file 'fifo_env_pkg.sv'.
+Parsing included file './fifo_base_test.sv'.
+Back to file 'fifo_env_pkg.sv'.
+Back to file 'tb_top.sv'.
+Top Level Modules:
+       uvm_custom_install_recording
+       tb_top
+TimeScale is 1 ns / 1 ns
+Starting vcs inline pass...
+10 modules and 0 UDP read.
+	However, due to incremental compilation, only 2 modules need to be compiled.
+recompiling package vcs_paramclassrepository because:
+	This module or some inlined child module(s) has/have been modified.
+recompiling module tb_top because:
+	This module or some inlined child module(s) has/have been modified.
+Both modules done.
+make[1]: Entering directory `/home/crazy/projects/async_fifo/sim/csrc'
+rm -f _csrc*.so amd64_scvhdl_*.so pre_vcsobj_*.so share_vcsobj_*.so
+ld -shared -o .//../simv.daidir//_csrc1.so --whole-archive _vcsobj_1_1.a  --no-whole-archive \
+
+ld -shared -o .//../simv.daidir//_csrc0.so 5NrI_d.o 5NrIB_d.o SIM_l.o  
+ld -shared -o .//../simv.daidir//pre_vcsobj_0_1.so --whole-archive pre_vcsobj_0_1.a \
+--no-whole-archive
+ld -shared -o .//../simv.daidir//pre_vcsobj_1_1.so --whole-archive pre_vcsobj_1_1.a \
+--no-whole-archive
+ld -shared -o .//../simv.daidir//pre_vcsobj_1_2.so --whole-archive pre_vcsobj_1_2.a \
+--no-whole-archive
+ld -shared -o .//../simv.daidir//pre_vcsobj_1_3.so --whole-archive pre_vcsobj_1_3.a \
+--no-whole-archive
+if [ -x ../simv ]; then chmod -x ../simv; fi
+g++  -o ../simv    -Wl,-rpath-link=./ -Wl,-rpath='$ORIGIN'/simv.daidir/ -Wl,-rpath='$ORIGIN'/simv.daidir//scsim.db.dir \
+uvm_dpi.o  _csrc1.so _csrc0.so  pre_vcsobj_0_1.so pre_vcsobj_1_1.so pre_vcsobj_1_2.so \
+pre_vcsobj_1_3.so  rmapats_mop.o rmapats.o rmar.o           /opt/synopsys/vcs_2014/amd64/lib/libzerosoft_rt_stubs.so \
+/opt/synopsys/vcs_2014/amd64/lib/libvirsim.so /opt/synopsys/vcs_2014/amd64/lib/liberrorinf.so \
+/opt/synopsys/vcs_2014/amd64/lib/libsnpsmalloc.so    /opt/synopsys/vcs_2014/amd64/lib/libvcsnew.so \
+/opt/synopsys/vcs_2014/amd64/lib/libuclinative.so   -Wl,-whole-archive /opt/synopsys/vcs_2014/amd64/lib/libvcsucli.so \
+-Wl,-no-whole-archive       ./../simv.daidir/vc_hdrs.o  _vcs_pli_stub_.o   /opt/synopsys/vcs_2014/amd64/lib/vcs_save_restore_new.o \
+/opt/synopsys/verdi_2015/share/PLI/VCS/LINUX64/pli.a -ldl  -lc -lm -lpthread -ldl \
+
+../simv up to date
+make[1]: Leaving directory `/home/crazy/projects/async_fifo/sim/csrc'
+CPU time: 22.717 seconds to compile + 2.638 seconds to elab + 1.375 seconds to link

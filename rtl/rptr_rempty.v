@@ -10,13 +10,14 @@ output reg [AWIDTH:0] rptr, //address width + 1
 output reg rempty
 );
 // all signals that have a width of (address + 1) are used in comparison
-wire [AWIDTH:0] bnext; //address width + 1
-wire renable;
-reg [AWIDTH:0] bin;    //address width + 1
-reg [AWIDTH:0] gnext;  //address width + 1
+wire [AWIDTH:0] bnext;  //address width + 1
+reg  [AWIDTH:0] bin;    //address width + 1
+reg [AWIDTH:0] gnext;   //address width + 1
 reg empty_val;
+wire renable;
+assign renable = rinc & ~rempty;
+assign bnext = bin + renable;
 
-assign bnext = bin + (rinc & ~rempty);
 always@(posedge rclk, negedge rrst_n)
 if(!rrst_n) bin <= 0;
 else bin <= bnext;
@@ -25,6 +26,7 @@ assign raddr = bin[AWIDTH-1:0];
 
 //////////Handling empty condition/////////////////
 //1. binary to gray logic
+/*
 always @* 
 begin : gray2bin
 integer i;
@@ -33,7 +35,8 @@ for (i = 0; i < AWIDTH; i =  i + 1) //loop from i=0 to 2 in our case
 
 gnext[AWIDTH-1] = bnext[AWIDTH-1];
 end
-
+*/
+assign gnext = (bnext>>1) ^ bnext;
 ///////////////////////////////////////////////
 //2. Synchronizing the gray code pointer to be transferred in the other domain
 always @(posedge rclk, negedge rrst_n) begin
@@ -43,14 +46,15 @@ end
 
 ///////////////////////////////////////////////////
 //3. Generation of empty condition
-always@* begin
 
+always@* begin
 if (gnext == wptr)
      empty_val = 1;
-
 else empty_val = 0;
 end
 
+
+//assign rempty_val = (gnext == wptr);
 //4. Registering empty value to be synchronized with the clock
 always @(posedge rclk, negedge rrst_n) begin
 if(!rrst_n) rempty <= 1;

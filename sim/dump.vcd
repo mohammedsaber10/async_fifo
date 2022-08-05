@@ -1,0 +1,27 @@
+$date
+	Mon Jul 18 14:31:27 2022
+$end
+
+$version
+	Synopsys VCS version I-2014.03_Full64
+$end
+
+$timescale
+	1ns
+$end
+
+$comment Csum: 1 e80eb5423da721e1 $end
+
+
+$scope module tb_top $end
+
+$scope begin unnamed$$_10 $end
+$upscope $end
+
+$upscope $end
+
+$enddefinitions $end
+
+#0
+$dumpvars
+$end
