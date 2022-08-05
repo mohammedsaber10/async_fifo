@@ -1,7 +1,7 @@
 Command: ./simv +UVM_VERBOSITY=UVM_MEDIUM +UVM_OBJECTION_TRACE -l sim.log
 Chronologic VCS simulator copyright 1991-2014
 Contains Synopsys proprietary information.
-Compiler version I-2014.03_Full64; Runtime version I-2014.03_Full64;  Aug  4 11:39 2022
+Compiler version I-2014.03_Full64; Runtime version I-2014.03_Full64;  Aug  4 17:41 2022
 ----------------------------------------------------------------
 UVM-1.1d.VCS
 (C) 2007-2013 Mentor Graphics Corporation
@@ -123,15 +123,15 @@ UVM_INFO tb_top.sv(23) @ 10: reporter [RCLK] rclk = 0
 UVM_INFO tb_top.sv(15) @ 15: reporter [WCLK] wclk = 1
 UVM_INFO tb_top.sv(23) @ 15: reporter [RCLK] rclk = 1
 UVM_INFO ./fifo_env/w_monitor.sv(25) @ 15: uvm_test_top.m_env.w_agt.w_mon [w_monitor] Collecting write transaction data from the interface
-UVM_INFO ./fifo_env/w_driver.sv(45) @ 15: uvm_test_top.m_env.w_agt.w_drv [w_driver] Data is drived successfully to the interface @ the positive edge of the wclk
-UVM_INFO ./fifo_env/w_driver.sv(46) @ 15: uvm_test_top.m_env.w_agt.w_drv [w_driver] Write Data = 0xxx, and Write enable = 0, that drived on the interface
+UVM_INFO ./fifo_env/w_driver.sv(47) @ 15: uvm_test_top.m_env.w_agt.w_drv [w_driver] Data is drived successfully to the interface @ the positive edge of the wclk
+UVM_INFO ./fifo_env/w_driver.sv(48) @ 15: uvm_test_top.m_env.w_agt.w_drv [w_driver] Write Data = 0xxx, and Write enable = 0, that drived on the interface
 UVM_INFO ./fifo_seq/fifo_w_seq.sv(21) @ 15: uvm_test_top.m_env.w_agt.w_seqr@@w_seq [fifo_w_seq] wdata = 0x37, and write enable = 1
 UVM_INFO tb_top.sv(15) @ 20: reporter [WCLK] wclk = 0
 UVM_INFO tb_top.sv(23) @ 20: reporter [RCLK] rclk = 0
 UVM_INFO tb_top.sv(15) @ 25: reporter [WCLK] wclk = 1
 UVM_INFO tb_top.sv(23) @ 25: reporter [RCLK] rclk = 1
-UVM_INFO ./fifo_env/w_driver.sv(45) @ 25: uvm_test_top.m_env.w_agt.w_drv [w_driver] Data is drived successfully to the interface @ the positive edge of the wclk
-UVM_INFO ./fifo_env/w_driver.sv(46) @ 25: uvm_test_top.m_env.w_agt.w_drv [w_driver] Write Data = 0x5c, and Write enable = 1, that drived on the interface
+UVM_INFO ./fifo_env/w_driver.sv(47) @ 25: uvm_test_top.m_env.w_agt.w_drv [w_driver] Data is drived successfully to the interface @ the positive edge of the wclk
+UVM_INFO ./fifo_env/w_driver.sv(48) @ 25: uvm_test_top.m_env.w_agt.w_drv [w_driver] Write Data = 0x5c, and Write enable = 1, that drived on the interface
 UVM_INFO ./fifo_env/w_monitor.sv(41) @ 25: uvm_test_top.m_env.w_agt.w_mon [w_monitor] wdata = 0x5c, and write enable = 1
 UVM_INFO ./fifo_env/w_monitor.sv(42) @ 25: uvm_test_top.m_env.w_agt.w_mon [w_monitor] The data is collected successfully
 UVM_INFO ./fifo_env/fifo_scoreboard.sv(28) @ 25: uvm_test_top.m_env.m_sb [SB_WR_PORT] wdata = 0x5c, and write enable = 1
@@ -141,8 +141,8 @@ UVM_INFO tb_top.sv(15) @ 30: reporter [WCLK] wclk = 0
 UVM_INFO tb_top.sv(23) @ 30: reporter [RCLK] rclk = 0
 UVM_INFO tb_top.sv(15) @ 35: reporter [WCLK] wclk = 1
 UVM_INFO tb_top.sv(23) @ 35: reporter [RCLK] rclk = 1
-UVM_INFO ./fifo_env/w_driver.sv(45) @ 35: uvm_test_top.m_env.w_agt.w_drv [w_driver] Data is drived successfully to the interface @ the positive edge of the wclk
-UVM_INFO ./fifo_env/w_driver.sv(46) @ 35: uvm_test_top.m_env.w_agt.w_drv [w_driver] Write Data = 0x37, and Write enable = 1, that drived on the interface
+UVM_INFO ./fifo_env/w_driver.sv(47) @ 35: uvm_test_top.m_env.w_agt.w_drv [w_driver] Data is drived successfully to the interface @ the positive edge of the wclk
+UVM_INFO ./fifo_env/w_driver.sv(48) @ 35: uvm_test_top.m_env.w_agt.w_drv [w_driver] Write Data = 0x37, and Write enable = 1, that drived on the interface
 UVM_INFO ./fifo_env/w_monitor.sv(41) @ 35: uvm_test_top.m_env.w_agt.w_mon [w_monitor] wdata = 0x37, and write enable = 1
 UVM_INFO ./fifo_env/w_monitor.sv(42) @ 35: uvm_test_top.m_env.w_agt.w_mon [w_monitor] The data is collected successfully
 UVM_INFO ./fifo_env/fifo_scoreboard.sv(28) @ 35: uvm_test_top.m_env.m_sb [SB_WR_PORT] wdata = 0x37, and write enable = 1
@@ -152,8 +152,8 @@ UVM_INFO tb_top.sv(15) @ 40: reporter [WCLK] wclk = 0
 UVM_INFO tb_top.sv(23) @ 40: reporter [RCLK] rclk = 0
 UVM_INFO tb_top.sv(15) @ 45: reporter [WCLK] wclk = 1
 UVM_INFO tb_top.sv(23) @ 45: reporter [RCLK] rclk = 1
-UVM_INFO ./fifo_env/w_driver.sv(45) @ 45: uvm_test_top.m_env.w_agt.w_drv [w_driver] Data is drived successfully to the interface @ the positive edge of the wclk
-UVM_INFO ./fifo_env/w_driver.sv(46) @ 45: uvm_test_top.m_env.w_agt.w_drv [w_driver] Write Data = 0x71, and Write enable = 1, that drived on the interface
+UVM_INFO ./fifo_env/w_driver.sv(47) @ 45: uvm_test_top.m_env.w_agt.w_drv [w_driver] Data is drived successfully to the interface @ the positive edge of the wclk
+UVM_INFO ./fifo_env/w_driver.sv(48) @ 45: uvm_test_top.m_env.w_agt.w_drv [w_driver] Write Data = 0x71, and Write enable = 1, that drived on the interface
 UVM_INFO ./fifo_env/w_monitor.sv(41) @ 45: uvm_test_top.m_env.w_agt.w_mon [w_monitor] wdata = 0x71, and write enable = 1
 UVM_INFO ./fifo_env/w_monitor.sv(42) @ 45: uvm_test_top.m_env.w_agt.w_mon [w_monitor] The data is collected successfully
 UVM_INFO ./fifo_env/fifo_scoreboard.sv(28) @ 45: uvm_test_top.m_env.m_sb [SB_WR_PORT] wdata = 0x71, and write enable = 1
@@ -163,8 +163,8 @@ UVM_INFO tb_top.sv(15) @ 50: reporter [WCLK] wclk = 0
 UVM_INFO tb_top.sv(23) @ 50: reporter [RCLK] rclk = 0
 UVM_INFO tb_top.sv(15) @ 55: reporter [WCLK] wclk = 1
 UVM_INFO tb_top.sv(23) @ 55: reporter [RCLK] rclk = 1
-UVM_INFO ./fifo_env/w_driver.sv(45) @ 55: uvm_test_top.m_env.w_agt.w_drv [w_driver] Data is drived successfully to the interface @ the positive edge of the wclk
-UVM_INFO ./fifo_env/w_driver.sv(46) @ 55: uvm_test_top.m_env.w_agt.w_drv [w_driver] Write Data = 0x75, and Write enable = 1, that drived on the interface
+UVM_INFO ./fifo_env/w_driver.sv(47) @ 55: uvm_test_top.m_env.w_agt.w_drv [w_driver] Data is drived successfully to the interface @ the positive edge of the wclk
+UVM_INFO ./fifo_env/w_driver.sv(48) @ 55: uvm_test_top.m_env.w_agt.w_drv [w_driver] Write Data = 0x75, and Write enable = 1, that drived on the interface
 UVM_INFO ./fifo_env/w_monitor.sv(41) @ 55: uvm_test_top.m_env.w_agt.w_mon [w_monitor] wdata = 0x75, and write enable = 1
 UVM_INFO ./fifo_env/w_monitor.sv(42) @ 55: uvm_test_top.m_env.w_agt.w_mon [w_monitor] The data is collected successfully
 UVM_INFO ./fifo_env/fifo_scoreboard.sv(28) @ 55: uvm_test_top.m_env.m_sb [SB_WR_PORT] wdata = 0x75, and write enable = 1
@@ -174,8 +174,8 @@ UVM_INFO tb_top.sv(15) @ 60: reporter [WCLK] wclk = 0
 UVM_INFO tb_top.sv(23) @ 60: reporter [RCLK] rclk = 0
 UVM_INFO tb_top.sv(15) @ 65: reporter [WCLK] wclk = 1
 UVM_INFO tb_top.sv(23) @ 65: reporter [RCLK] rclk = 1
-UVM_INFO ./fifo_env/w_driver.sv(45) @ 65: uvm_test_top.m_env.w_agt.w_drv [w_driver] Data is drived successfully to the interface @ the positive edge of the wclk
-UVM_INFO ./fifo_env/w_driver.sv(46) @ 65: uvm_test_top.m_env.w_agt.w_drv [w_driver] Write Data = 0x75, and Write enable = 1, that drived on the interface
+UVM_INFO ./fifo_env/w_driver.sv(47) @ 65: uvm_test_top.m_env.w_agt.w_drv [w_driver] Data is drived successfully to the interface @ the positive edge of the wclk
+UVM_INFO ./fifo_env/w_driver.sv(48) @ 65: uvm_test_top.m_env.w_agt.w_drv [w_driver] Write Data = 0x75, and Write enable = 1, that drived on the interface
 UVM_INFO ./fifo_env/w_monitor.sv(41) @ 65: uvm_test_top.m_env.w_agt.w_mon [w_monitor] wdata = 0x75, and write enable = 1
 UVM_INFO ./fifo_env/w_monitor.sv(42) @ 65: uvm_test_top.m_env.w_agt.w_mon [w_monitor] The data is collected successfully
 UVM_INFO ./fifo_env/fifo_scoreboard.sv(28) @ 65: uvm_test_top.m_env.m_sb [SB_WR_PORT] wdata = 0x75, and write enable = 1
@@ -185,8 +185,8 @@ UVM_INFO tb_top.sv(15) @ 70: reporter [WCLK] wclk = 0
 UVM_INFO tb_top.sv(23) @ 70: reporter [RCLK] rclk = 0
 UVM_INFO tb_top.sv(15) @ 75: reporter [WCLK] wclk = 1
 UVM_INFO tb_top.sv(23) @ 75: reporter [RCLK] rclk = 1
-UVM_INFO ./fifo_env/w_driver.sv(45) @ 75: uvm_test_top.m_env.w_agt.w_drv [w_driver] Data is drived successfully to the interface @ the positive edge of the wclk
-UVM_INFO ./fifo_env/w_driver.sv(46) @ 75: uvm_test_top.m_env.w_agt.w_drv [w_driver] Write Data = 0xe6, and Write enable = 1, that drived on the interface
+UVM_INFO ./fifo_env/w_driver.sv(47) @ 75: uvm_test_top.m_env.w_agt.w_drv [w_driver] Data is drived successfully to the interface @ the positive edge of the wclk
+UVM_INFO ./fifo_env/w_driver.sv(48) @ 75: uvm_test_top.m_env.w_agt.w_drv [w_driver] Write Data = 0xe6, and Write enable = 1, that drived on the interface
 UVM_INFO ./fifo_env/w_monitor.sv(41) @ 75: uvm_test_top.m_env.w_agt.w_mon [w_monitor] wdata = 0xe6, and write enable = 1
 UVM_INFO ./fifo_env/w_monitor.sv(42) @ 75: uvm_test_top.m_env.w_agt.w_mon [w_monitor] The data is collected successfully
 UVM_INFO ./fifo_env/fifo_scoreboard.sv(28) @ 75: uvm_test_top.m_env.m_sb [SB_WR_PORT] wdata = 0xe6, and write enable = 1
@@ -196,8 +196,8 @@ UVM_INFO tb_top.sv(15) @ 80: reporter [WCLK] wclk = 0
 UVM_INFO tb_top.sv(23) @ 80: reporter [RCLK] rclk = 0
 UVM_INFO tb_top.sv(15) @ 85: reporter [WCLK] wclk = 1
 UVM_INFO tb_top.sv(23) @ 85: reporter [RCLK] rclk = 1
-UVM_INFO ./fifo_env/w_driver.sv(45) @ 85: uvm_test_top.m_env.w_agt.w_drv [w_driver] Data is drived successfully to the interface @ the positive edge of the wclk
-UVM_INFO ./fifo_env/w_driver.sv(46) @ 85: uvm_test_top.m_env.w_agt.w_drv [w_driver] Write Data = 0x7b, and Write enable = 1, that drived on the interface
+UVM_INFO ./fifo_env/w_driver.sv(47) @ 85: uvm_test_top.m_env.w_agt.w_drv [w_driver] Data is drived successfully to the interface @ the positive edge of the wclk
+UVM_INFO ./fifo_env/w_driver.sv(48) @ 85: uvm_test_top.m_env.w_agt.w_drv [w_driver] Write Data = 0x7b, and Write enable = 1, that drived on the interface
 UVM_INFO ./fifo_env/w_monitor.sv(41) @ 85: uvm_test_top.m_env.w_agt.w_mon [w_monitor] wdata = 0x7b, and write enable = 1
 UVM_INFO ./fifo_env/w_monitor.sv(42) @ 85: uvm_test_top.m_env.w_agt.w_mon [w_monitor] The data is collected successfully
 UVM_INFO ./fifo_env/fifo_scoreboard.sv(28) @ 85: uvm_test_top.m_env.m_sb [SB_WR_PORT] wdata = 0x7b, and write enable = 1
@@ -207,15 +207,17 @@ UVM_INFO tb_top.sv(15) @ 90: reporter [WCLK] wclk = 0
 UVM_INFO tb_top.sv(23) @ 90: reporter [RCLK] rclk = 0
 UVM_INFO tb_top.sv(15) @ 95: reporter [WCLK] wclk = 1
 UVM_INFO tb_top.sv(23) @ 95: reporter [RCLK] rclk = 1
-UVM_INFO ./fifo_env/w_driver.sv(45) @ 95: uvm_test_top.m_env.w_agt.w_drv [w_driver] Data is drived successfully to the interface @ the positive edge of the wclk
-UVM_INFO ./fifo_env/w_driver.sv(46) @ 95: uvm_test_top.m_env.w_agt.w_drv [w_driver] Write Data = 0x34, and Write enable = 1, that drived on the interface
+UVM_INFO ./fifo_env/w_driver.sv(47) @ 95: uvm_test_top.m_env.w_agt.w_drv [w_driver] Data is drived successfully to the interface @ the positive edge of the wclk
+UVM_INFO ./fifo_env/w_driver.sv(48) @ 95: uvm_test_top.m_env.w_agt.w_drv [w_driver] Write Data = 0x34, and Write enable = 1, that drived on the interface
 UVM_INFO ./fifo_env/w_monitor.sv(41) @ 95: uvm_test_top.m_env.w_agt.w_mon [w_monitor] wdata = 0x34, and write enable = 1
 UVM_INFO ./fifo_env/w_monitor.sv(42) @ 95: uvm_test_top.m_env.w_agt.w_mon [w_monitor] The data is collected successfully
 UVM_INFO ./fifo_env/fifo_scoreboard.sv(28) @ 95: uvm_test_top.m_env.m_sb [SB_WR_PORT] wdata = 0x34, and write enable = 1
 UVM_INFO ./fifo_env/w_monitor.sv(25) @ 95: uvm_test_top.m_env.w_agt.w_mon [w_monitor] Collecting write transaction data from the interface
 UVM_INFO ./fifo_seq/fifo_w_seq.sv(21) @ 95: uvm_test_top.m_env.w_agt.w_seqr@@w_seq [fifo_w_seq] wdata = 0x97, and write enable = 1
+UVM_INFO ./fifo_env/w_driver.sv(37) @ 95: uvm_test_top.m_env.w_agt.w_drv [w_driver] Transaction is dropped as the fifo is full
 UVM_INFO ./fifo_seq/fifo_w_seq.sv(25) @ 95: uvm_test_top.m_env.w_agt.w_seqr@@w_seq [fifo_w_seq] Sending end of write sequence...
 UVM_INFO ./fifo_seq/fifo_w_seq.sv(30) @ 95: uvm_test_top.m_env.w_agt.w_seqr@@w_seq [fifo_w_seq] wdata = 0xc6, and write enable = 0
+UVM_INFO ./fifo_env/w_driver.sv(37) @ 95: uvm_test_top.m_env.w_agt.w_drv [w_driver] Transaction is dropped as the fifo is full
 UVM_INFO @ 95: main_objection [OBJTN_TRC] Object uvm_test_top dropped 1 objection(s): count=0  total=0
 UVM_INFO @ 95: main_objection [OBJTN_TRC] Object uvm_test_top all_dropped 1 objection(s): count=0  total=0
 UVM_INFO @ 95: main_objection [OBJTN_TRC] Object uvm_top subtracted 1 objection(s) from its total (dropped from source object uvm_test_top): count=0  total=0
@@ -259,5 +261,5 @@ Error-[NOA] Null object access
 
            V C S   S i m u l a t i o n   R e p o r t 
 Time: 95 ns
-CPU Time:      4.370 seconds;       Data structure size:   0.4Mb
-Thu Aug  4 11:40:02 2022
+CPU Time:      4.200 seconds;       Data structure size:   0.4Mb
+Thu Aug  4 17:42:03 2022

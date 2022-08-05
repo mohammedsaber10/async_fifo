@@ -6,7 +6,7 @@ Command: vcs ../rtl/dual_port_ram.v ../rtl/fifo.v ../rtl/rptr_rempty.v ../rtl/sy
 ../rtl/wptr_wfull.v tb_top.sv -sverilog -ntb_opts uvm-1.1 -lca -debug_access+all \
 -timescale=1ns/1ns -kdb +vcs+vcdpluson -l comp.log
                          Chronologic VCS (TM)
-         Version I-2014.03_Full64 -- Thu Aug  4 11:39:17 2022
+         Version I-2014.03_Full64 -- Thu Aug  4 17:41:15 2022
                Copyright (c) 1991-2014 by Synopsys Inc.
                          ALL RIGHTS RESERVED
 
@@ -349,29 +349,26 @@ Top Level Modules:
 TimeScale is 1 ns / 1 ns
 Starting vcs inline pass...
 10 modules and 0 UDP read.
-	However, due to incremental compilation, only 2 modules need to be compiled.
-recompiling package vcs_paramclassrepository because:
-	This module or some inlined child module(s) has/have been modified.
-recompiling module tb_top because:
-	This module or some inlined child module(s) has/have been modified.
-Both modules done.
+recompiling package vcs_paramclassrepository
+recompiling package uvm_pkg
+recompiling package _vcs_msglog
+recompiling module uvm_custom_install_recording
+recompiling module fifo
+recompiling module fifo_w_if
+recompiling module fifo_r_if
+recompiling package fifo_env_pkg
+recompiling module tb_top
+All of 11 modules done
 make[1]: Entering directory `/home/crazy/projects/async_fifo/sim/csrc'
 rm -f _csrc*.so amd64_scvhdl_*.so pre_vcsobj_*.so share_vcsobj_*.so
+g++ -w  -pipe -fPIC -O -I/opt/synopsys/vcs_2014/include    -c /opt/synopsys/vcs_2014/etc/uvm-1.1/dpi/uvm_dpi.cc \
+
 ld -shared -o .//../simv.daidir//_csrc1.so --whole-archive _vcsobj_1_1.a  --no-whole-archive \
 
 ld -shared -o .//../simv.daidir//_csrc0.so 5NrI_d.o 5NrIB_d.o SIM_l.o  
-ld -shared -o .//../simv.daidir//pre_vcsobj_0_1.so --whole-archive pre_vcsobj_0_1.a \
---no-whole-archive
-ld -shared -o .//../simv.daidir//pre_vcsobj_1_1.so --whole-archive pre_vcsobj_1_1.a \
---no-whole-archive
-ld -shared -o .//../simv.daidir//pre_vcsobj_1_2.so --whole-archive pre_vcsobj_1_2.a \
---no-whole-archive
-ld -shared -o .//../simv.daidir//pre_vcsobj_1_3.so --whole-archive pre_vcsobj_1_3.a \
---no-whole-archive
 if [ -x ../simv ]; then chmod -x ../simv; fi
 g++  -o ../simv    -Wl,-rpath-link=./ -Wl,-rpath='$ORIGIN'/simv.daidir/ -Wl,-rpath='$ORIGIN'/simv.daidir//scsim.db.dir \
-uvm_dpi.o  _csrc1.so _csrc0.so  pre_vcsobj_0_1.so pre_vcsobj_1_1.so pre_vcsobj_1_2.so \
-pre_vcsobj_1_3.so  rmapats_mop.o rmapats.o rmar.o           /opt/synopsys/vcs_2014/amd64/lib/libzerosoft_rt_stubs.so \
+uvm_dpi.o  _csrc1.so _csrc0.so    rmapats_mop.o rmapats.o rmar.o           /opt/synopsys/vcs_2014/amd64/lib/libzerosoft_rt_stubs.so \
 /opt/synopsys/vcs_2014/amd64/lib/libvirsim.so /opt/synopsys/vcs_2014/amd64/lib/liberrorinf.so \
 /opt/synopsys/vcs_2014/amd64/lib/libsnpsmalloc.so    /opt/synopsys/vcs_2014/amd64/lib/libvcsnew.so \
 /opt/synopsys/vcs_2014/amd64/lib/libuclinative.so   -Wl,-whole-archive /opt/synopsys/vcs_2014/amd64/lib/libvcsucli.so \
@@ -380,4 +377,4 @@ pre_vcsobj_1_3.so  rmapats_mop.o rmapats.o rmar.o           /opt/synopsys/vcs_20
 
 ../simv up to date
 make[1]: Leaving directory `/home/crazy/projects/async_fifo/sim/csrc'
-CPU time: 22.717 seconds to compile + 2.638 seconds to elab + 1.375 seconds to link
+CPU time: 27.188 seconds to compile + 2.540 seconds to elab + 1.436 seconds to link

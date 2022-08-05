@@ -110,7 +110,7 @@ HISTCONTROL=ignoredups
 ORBIT_SOCKETDIR=/tmp/orbit-crazy
 PATH=/opt/apache/Totem_Linux64e6_V19.2.7/bin:/opt/apache/RedHawk_Linux64e6_V2019R2.8/bin:/opt/mentor/questasim_10.7c/questasim/bin:/opt/cadence/PVS151/tools/spectre/bin:/opt/cadence/PVS151/tools/dfII/bin:/opt/cadence/PVS151/tools/bin:/opt/cadence/PVS151/bin:/tools/spectre/bin:/opt/cadence/CONFRML192/bin:/opt/cadence/GENUS191/bin:/opt/cadence/ASSURA41/bin:/opt/cadence/INNOVUS181/bin:/opt/cadence/EXT191/bin:/opt/cadence/SPECTRE181/tools/spectre/bin:/opt/cadence/SPECTRE181/tools/dfII/bin:/opt/cadence/SPECTRE181/tools/bin:/opt/cadence/SPECTRE181/bin:/tools/spectre/bin:/opt/cadence/ICADV123/tools/plot/bin:/opt/cadence/ICADV123/tools/iccraft/bin:/opt/cadence/ICADV123/tools/dracula/bin:/opt/cadence/ICADV123/tools/dfII/bin:/opt/cadence/ICADV123/tools/bin:/opt/cadence/ICADV123/share/bin:/opt/synopsys/Laker2016/bin:/opt/synopsys/scl_2016/linux64/bin:/opt/synopsys/Milkyway_2016/bin:/opt/synopsys/Milkyway_2016/bin/linux64:/opt/synopsys/scl_2016/linux64/bin:/opt/synopsys/xa_2015/bin:/opt/synopsys/scl_2016/linux64/bin:/opt/synopsys/hspice_2017/hspice/bin:/opt/synopsys/scl_2016/linux64/bin:/opt/synopsys/milkway_2016/bin:/opt/synopsys/scl_2016/linux64/bin:/opt/synopsys/wv_2018/bin:/opt/synopsys/scl_2016/linux64/bin:/opt/synopsys/starrc_2016/bin:/opt/synopsys/scl_2016/linux64/bin:/opt/synopsys/siliconsmart_2016/bin:/opt/synopsys/scl_2016/linux64/bin:/opt/synopsys/libcompiler_2016/admin/install/lc/bin:/opt/synopsys/libcompiler_2016/bin:/opt/synopsys/scl_2016/linux64/bin:/opt/synopsys/primetime_2016/bin:/opt/synopsys/scl_2016/linux64/bin:/opt/synopsys/icc_2016/bin:/opt/synopsys/scl_2016/linux64/bin:/opt/synopsys/ICC2_2018/linux64/bin:/opt/synopsys/ICC2_2018/bin:/opt/synopsys/scl_2016/linux64/bin:/opt/synopsys/spyglass_2016/SpyGlass-L2016.06/SPYGLASS_HOME/bin:/opt/synopsys/scl_2016/linux64/bin:/opt/synopsys/fm_2016/bin:/opt/synopsys/scl_2016/linux64/bin:/opt/synopsys/dc_2018/bin:/opt/synopsys/scl_2016/linux64/bin:/opt/synopsys/verdi_2015/bin:/opt/synopsys/scl_2016/linux64/bin:/opt/synopsys/vcs_2014/bin:/opt/synopsys/scl_2016/linux64/bin:/usr/lib64/qt-3.3/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:/home/crazy/bin:/opt/mentor/calibre2019/aoi_cal_2019.3_25.15/bin:/opt/mentor/ADS2016_01/bin
 SESSION_MANAGER=local/unix:@/tmp/.ICE-unix/4222,unix/unix:/tmp/.ICE-unix/4222
-WINDOWID=62914563
+WINDOWID=62946792
 ICC_HOME=/opt/synopsys/icc_2016
 apache_dir=/opt/skel/tools_env/apache
 MMSIM_HOME=/opt/cadence/SPECTRE181
@@ -118,7 +118,7 @@ CDS_AUTO_64BIT=ALL
 LS_COLORS=rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=01;05;37;41:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lz=01;31:*.xz=01;31:*.bz2=01;31:*.tbz=01;31:*.tbz2=01;31:*.bz=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.rar=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=01;36:*.au=01;36:*.flac=01;36:*.mid=01;36:*.midi=01;36:*.mka=01;36:*.mp3=01;36:*.mpc=01;36:*.ogg=01;36:*.ra=01;36:*.wav=01;36:*.axa=01;36:*.oga=01;36:*.spx=01;36:*.xspf=01;36:
 MGC_CALIBRE_LAYOUT_SERVER=127.0.0.1:1989
 CONFRML_HOME=/opt/cadence/CONFRML192
-SSH_AUTH_SOCK=/tmp/keyring-ubju40/socket.ssh
+SSH_AUTH_SOCK=/tmp/ssh-tiVq124104/agent.124104
 GIO_LAUNCHED_DESKTOP_FILE_PID=111957
 DISPLAY=:0.0
 XA_HOME=/opt/synopsys/xa_2015
@@ -128,6 +128,7 @@ HOME=/home/crazy
 VCS_HOME=/opt/synopsys/vcs_2014
 PWD=/home/crazy/projects/async_fifo/sim
 HPEESOF_HOME=/opt/mentor/ADS2016_01
+SSH_AGENT_PID=124105
 CALIBRE_HOME=/opt/mentor/calibre2019/aoi_cal_2019.3_25.15
 G_BROKEN_FILENAMES=1
 MGLS_LICENSE_FILE=/opt/mentor/questasim_10.7c/license/license.dat
@@ -156,7 +157,7 @@ Milkyway_HOME=/opt/synopsys/Milkyway_2016
 GNOME_KEYRING_PID=4212
 WV_HOME=/opt/synopsys/wv_2018
 CDS_LOAD_ENV=CSF
-OLDPWD=/home/crazy
+OLDPWD=/home/crazy/projects/async_fifo
 CVS_RSH=ssh
 redhawk_HOME=/opt/apache/RedHawk_Linux64e6_V2019R2.8
 MAKEFLAGS=
@@ -198,55 +199,55 @@ argv[1]=+UVM_VERBOSITY=UVM_MEDIUM
 argv[2]=+UVM_OBJECTION_TRACE
 argv[3]=-l
 argv[4]=sim.log
-200 profile - 100
-          CPU/Mem usage: 0.380 sys,  4.250 user,  306.30M sys,  0.00M vm
-201 VC callback profile - scalar:0 vector:0
-202 Thu Aug  4 11:40:01 2022
-203 pliAppInit
-204 *Verdi3* : Enable Parallel Dumping.
-205 [MHPI_DL_ERROR]./simv: undefined symbol: mhpi_skipFileReset
-206 pliAppMiscSet: New Sim Round
-207 pliEntryInit
-208 LIBSSCORE=found /opt/synopsys/verdi_2015/share/PLI/lib/LINUXAMD64/libsscore_vcs201403.so through $NOVAS_HOME setting.
-209 FSDB Dumper for VCS, Release Verdi3_K-2015.09, Linux x86_64/64bit, 08/25/2015
-210 (C) 1996 - 2015 by Synopsys, Inc.
-211 sps_call_fsdbDumpfile at 0 : tb_top.sv(68)
-212 argv[0]: tb_top.fsdb
-213 *Verdi3* FSDB WARNING: The FSDB file already exists. Overwriting the FSDB file may crash the programs that are using this file.
-214 *Verdi3* : Create FSDB file 'tb_top.fsdb'
-215 sps_call_fsdbDumpvars at 0 : tb_top.sv(69)
-216 argv[0]: 0
-217 argv[1]: (handle)0x5304718 tb_top
-218 *Verdi3* : Begin traversing the scope (tb_top), layer (0).
-219 *Verdi3* : End of traversing.
-220 fsdbDumpvars traverse var: profile - 
-          CPU/Mem usage: 0.390 sys,  4.260 user,  451.26M sys,  0.00M vm
-                   incr: 0.000 sys,  0.010 user,  3.23M sys,  0.00M vm
-                   accu: 0.000 sys,  0.010 user,  3.23M sys,  0.00M vm
-              accu incr: 0.000 sys,  0.010 user,  3.23M sys,  0.00M vm
+201 profile - 100
+          CPU/Mem usage: 0.320 sys,  4.090 user,  297.83M sys,  0.00M vm
+202 VC callback profile - scalar:0 vector:0
+203 Thu Aug  4 17:42:03 2022
+204 pliAppInit
+205 *Verdi3* : Enable Parallel Dumping.
+206 [MHPI_DL_ERROR]./simv: undefined symbol: mhpi_skipFileReset
+207 pliAppMiscSet: New Sim Round
+208 pliEntryInit
+209 LIBSSCORE=found /opt/synopsys/verdi_2015/share/PLI/lib/LINUXAMD64/libsscore_vcs201403.so through $NOVAS_HOME setting.
+210 FSDB Dumper for VCS, Release Verdi3_K-2015.09, Linux x86_64/64bit, 08/25/2015
+211 (C) 1996 - 2015 by Synopsys, Inc.
+212 sps_call_fsdbDumpfile at 0 : tb_top.sv(68)
+213 argv[0]: tb_top.fsdb
+214 *Verdi3* FSDB WARNING: The FSDB file already exists. Overwriting the FSDB file may crash the programs that are using this file.
+215 *Verdi3* : Create FSDB file 'tb_top.fsdb'
+216 sps_call_fsdbDumpvars at 0 : tb_top.sv(69)
+217 argv[0]: 0
+218 argv[1]: (handle)0x4272148 tb_top
+219 *Verdi3* : Begin traversing the scope (tb_top), layer (0).
+220 *Verdi3* : End of traversing.
+221 fsdbDumpvars traverse var: profile - 
+          CPU/Mem usage: 0.330 sys,  4.100 user,  442.78M sys,  0.00M vm
+                   incr: 0.010 sys,  0.010 user,  3.22M sys,  0.00M vm
+                   accu: 0.010 sys,  0.010 user,  3.22M sys,  0.00M vm
+              accu incr: 0.010 sys,  0.010 user,  3.22M sys,  0.00M vm
 
           Count usage: 70 var,  47 idcode,  47 callback
                  incr: 70 var,  47 idcode,  47 callback
                  accu: 70 var,  47 idcode,  47 callback
             accu incr: 70 var,  47 idcode,  47 callback
-221 VC callback profile - scalar:0 vector:0
-222 Thu Aug  4 11:40:01 2022
-223 fsdbDumpvars: profile - 
-          CPU/Mem usage: 0.400 sys,  4.260 user,  452.31M sys,  0.00M vm
-                   incr: 0.010 sys,  0.000 user,  1.05M sys,  0.00M vm
-                   accu: 0.010 sys,  0.010 user,  4.28M sys,  0.00M vm
-              accu incr: 0.010 sys,  0.000 user,  1.05M sys,  0.00M vm
+222 VC callback profile - scalar:0 vector:0
+223 Thu Aug  4 17:42:03 2022
+224 fsdbDumpvars: profile - 
+          CPU/Mem usage: 0.330 sys,  4.100 user,  443.83M sys,  0.00M vm
+                   incr: 0.000 sys,  0.000 user,  1.05M sys,  0.00M vm
+                   accu: 0.010 sys,  0.010 user,  4.27M sys,  0.00M vm
+              accu incr: 0.000 sys,  0.000 user,  1.05M sys,  0.00M vm
 
           Count usage: 70 var,  47 idcode,  47 callback
                  incr: 0 var,  0 idcode,  0 callback
                  accu: 70 var,  47 idcode,  47 callback
             accu incr: 0 var,  0 idcode,  0 callback
-224 VC callback profile - scalar:38 vector:32
-225 Thu Aug  4 11:40:01 2022
-226 End of simulation at 95
-227 VC callback profile - scalar:196 vector:142
-228 Thu Aug  4 11:40:02 2022
-229 Parallel profile    -  Flush:3 ProduceWait:0 ConsumerWait:0 BlockUsed:0
-230                        ProduceTime:4.778633584 ConsumerTime:0.000000000
-231 SimExit
-232 Sim process exit
+225 VC callback profile - scalar:38 vector:32
+226 Thu Aug  4 17:42:03 2022
+227 End of simulation at 95
+228 VC callback profile - scalar:196 vector:142
+229 Thu Aug  4 17:42:03 2022
+230 Parallel profile    -  Flush:3 ProduceWait:0 ConsumerWait:0 BlockUsed:0
+231                        ProduceTime:4.482515914 ConsumerTime:0.000000000
+232 SimExit
+233 Sim process exit
