@@ -19,7 +19,6 @@ virtual task main_phase(uvm_phase phase);
 super.main_phase(phase);
 `uvm_info(get_type_name(), "Starting monitoring data job...", UVM_MEDIUM)
 //sampling the data at the next clock edge
-@(posedge w_vif.wclk);
 forever begin
 m_tr = fifo_w_trans::type_id::create("m_tr");
 `uvm_info(get_type_name(), "Collecting write transaction data from the interface", UVM_MEDIUM)

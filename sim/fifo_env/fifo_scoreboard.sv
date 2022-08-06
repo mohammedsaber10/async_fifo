@@ -55,14 +55,23 @@ fifo_w_trans exp_tr;
 fifo_r_trans act_tr;
  //storing the initial size of the queue to use it for looping
 //as the queue size will change after each pop from it
-int exp_data_size = exp_data.size(); 
+int min_data_size_q = exp_data.size(); 
 //
-if(exp_data.size() != act_data.size())
-`uvm_error("SB_CHECK_PHASE", "unexpected data queues sizes")
+if(exp_data.size() < act_data.size()) begin
+`uvm_error("SB_CHECK_PHASE", "No matching in data queues sizes!!..min queue size will be applied, and the other transactions will be dropped")
+min_data_size_q = exp_data.size();
+end
+else if(exp_data.size() > act_data.size()) begin
+`uvm_error("SB_CHECK_PHASE", "No matching in data queues sizes!!..min queue size will be applied, and the other transactions will be dropped")
+min_data_size_q = act_data.size();
+end
+else min_data_size_q = exp_data.size();
+
 if(exp_data.size() == 0 || act_data.size() == 0)
 `uvm_error("SB_CHECK_PHASE", "No data found in the data queues")
-repeat(exp_data_size) begin
+repeat(min_data_size_q) begin
 exp_tr = exp_data.pop_front();
+
 `uvm_info(get_type_name(), $sformatf("Expected data = 0x%0h", exp_tr.wdata), UVM_LOW)
 act_tr = act_data.pop_front();
 `uvm_info(get_type_name(), $sformatf("Actual data = 0x%0h", act_tr.rdata), UVM_LOW)
@@ -73,8 +82,6 @@ else
    `uvm_info(get_type_name(), "Expected transaction mismatches the actual transaction!!", UVM_MEDIUM) 
 end
 endfunction
-
-
 
 
 endclass

@@ -13,10 +13,10 @@ endtask
 */
 virtual task body();
 fifo_w_trans w_tr;
-repeat(10) begin
+repeat(50) begin
 w_tr = fifo_w_trans::type_id::create("w_tr");
 start_item(w_tr);
-assert(w_tr.randomize() with {wen == 1;})
+assert(w_tr.randomize())
 else `uvm_error(get_type_name(), "Write transaction cannot be randomized")
 `uvm_info(get_type_name(), w_tr.convert2string(), UVM_MEDIUM)
 finish_item(w_tr);

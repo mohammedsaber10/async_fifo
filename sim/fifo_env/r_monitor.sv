@@ -19,7 +19,6 @@ endfunction
 
 virtual task main_phase(uvm_phase phase);
 super.main_phase(phase);
-@(posedge r_vif.rclk);
 forever begin
 //constructing new read transaction
 m_tr = fifo_r_trans::type_id::create("m_tr");

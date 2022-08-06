@@ -36,9 +36,9 @@ forever begin
  // get the the transaction from the read sequencer
 seq_item_port.get_next_item(req);
 // Drive the transaction only if the fifo is not empty
-if (!r_vif.rempty) begin   
+//if (!r_vif.rempty) begin   
 drive_read_enable(req);
-end
+//end
 seq_item_port.item_done();
 end
 endtask

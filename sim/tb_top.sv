@@ -41,8 +41,9 @@ endtask
 fifo_w_if w_if (wclk);
 fifo_r_if r_if (rclk);
 
-fifo dut 
+bind fifo fifo_sva fifo_sva_U (.*);
 
+fifo dut 
 (
 //write interface
 .wclk(wclk),

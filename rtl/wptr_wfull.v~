@@ -49,8 +49,8 @@ end
 //3. Generation of full condition
 always@* begin
 
-if((gnext[AWIDTH]     != rptr[AWIDTH]) &&
-   (gnext[AWIDTH-1]   != rptr[AWIDTH-1]) &&
+if((gnext[AWIDTH] != rptr[AWIDTH]) &&
+   (gnext[AWIDTH-1] != rptr[AWIDTH-1]) &&
    (gnext[AWIDTH-2:0] == rptr[AWIDTH-2:0]))
 full_val = 1;
 

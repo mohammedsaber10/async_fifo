@@ -12,10 +12,10 @@ endtask
 */
 virtual task body();
 fifo_r_trans r_tr;
-repeat(10) begin
+repeat(30) begin
 r_tr = fifo_r_trans::type_id::create("r_tr");
 start_item(r_tr);
-assert(r_tr.randomize() with {ren == 0;}) else `uvm_error(get_type_name(), "Read transaction cannot be randomized")
+assert(r_tr.randomize()) else `uvm_error(get_type_name(), "Read transaction cannot be randomized")
 `uvm_info(get_type_name(), r_tr.convert2string(), UVM_MEDIUM)
 finish_item(r_tr);
 end
