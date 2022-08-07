@@ -5,12 +5,7 @@ function new(string name = "");
 super.new(name);
 endfunction
 
-/*
-virtual task pre_body();
-if(!starting_phase != null)
-starting_phase.raise_objection(this);
-endtask
-*/
+
 virtual task body();
 fifo_w_trans w_tr;
 repeat(50) begin
@@ -32,11 +27,5 @@ finish_item(w_tr);
 //`uvm_do_with(w_tr, {wen == 0;})
 endtask
 
-/*
-virtual task post_body();
-if(!starting_phase != null)
-starting_phase.drop_objection(this);
-endtask
-*/
 
 endclass

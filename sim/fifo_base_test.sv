@@ -61,6 +61,8 @@ begin
 r_seq.start(m_env.r_agt.r_seqr);
 end
 join
+r_seq.start(m_env.r_agt.r_seqr);
+w_seq.start(m_env.w_agt.w_seqr);
 phase.drop_objection(this);
 
 endtask
